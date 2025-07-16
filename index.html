@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Love Your List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #f9f9fb;
+      color: #333;
+    }
+    header {
+      background: #7c3aed;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    h1, h2 {
+      margin-bottom: 1rem;
+    }
+    .plans {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .plan {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+    .plan h3 {
+      margin-top: 0;
+      color: #7c3aed;
+    }
+    form {
+      margin-top: 2rem;
+    }
+    label {
+      display: block;
+      margin: 1rem 0 0.25rem;
+    }
+    input[type="file"], input[type="email"] {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #7c3aed;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 2rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Love Your List</h1>
+    <p>Your Mail, Your Business — Handled with Love.</p>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Choose Your Plan</h2>
+      <div class="plans">
+        <div class="plan">
+          <h3>Basic Love – $15/mo or $150/yr</h3>
+          <p>Scanned mail for 1 recipient, 1-week digital storage.</p>
+        </div>
+        <div class="plan">
+          <h3>Business Love – $25/mo or $250/yr</h3>
+          <p>Scans + 1 monthly forwarding, up to 2 recipients.</p>
+        </div>
+        <div class="plan">
+          <h3>Total Love – $35/mo or $350/yr</h3>
+          <p>Unlimited scans, 3 recipients, priority support.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Upload Your ID</h2>
+      <form action="https://formsubmit.co/loveyourlist23@gmail.com" method="POST" enctype="multipart/form-data">
+        <label for="email">Your Email</label>
+        <input type="email" name="email" required />
+
+        <label for="id">Upload a Photo ID (JPG or PDF)</label>
+        <input type="file" name="id" accept=".jpg,.jpeg,.png,.pdf" required />
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Mailbox Sign-Up">
+
+        <button type="submit">Submit ID</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Love Your List. All rights reserved.
+  </footer>
+</body>
+</html>
